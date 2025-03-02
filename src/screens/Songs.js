@@ -99,7 +99,7 @@ export const Songs = ({ arrSongs }) => {
               color="success"
               variant="outlined"
               endIcon={<SendIcon style={{ transform: 'scaleX(-1)' }} sx={{ marginRight: 1 }} />}
-              onClick={() => { navigate("/Playback") }}
+              onClick={() => { navigate("/Playback/"+s.nameSong+"/all") }}
             >
               לחץ למעבר לדף הפלייבקים
             </Button>

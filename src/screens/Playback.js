@@ -3,7 +3,7 @@ import axios from 'axios';
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import './Playback.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import AddIcon from '@mui/icons-material/Add';
@@ -16,7 +16,9 @@ export const Playback = (props) => {
     const user = useSelector((state) => state.user.userLoggedIn);
     const dispatch = useDispatch();
     const navigate = useNavigate();
-
+    const { song, singer } = useParams();
+    console.log(song);
+    console.log(singer);
 
     //1
     const [playbackArr, setPlaybackArr] = useState([]);  // הכנת מערך שיחזיר את הפלייבקים
@@ -30,8 +32,13 @@ export const Playback = (props) => {
             //3
             setPlaybackArr(res.data);
             setFilteredPlaybacks(res.data); // מניחים שהסינון יתחיל על כל הפלייבקים
+            if (singer!=-1)
+                setFilteredPlaybacks(res.data.filter(pb => pb.nameSinger == singer || singer=="all"));
+            if (song!=-1)
+                setFilteredPlaybacks(res.data.filter(pb => pb.nameSong == song||song=="all"));
         }).catch(err => alert("התרחשה שגיאה בעת ההתחברות לשרת"))
     }, [])   //הפונקציה תופעל כשהקומפוננטה עולה
+
 
     // פונקציה שתסנן את הפלייבקים לפי שם הפלייבק או שם הזמר
     const handleSearch = (event) => {
@@ -49,7 +56,7 @@ export const Playback = (props) => {
     // פונקציה לרכישת הפלייבק
     const BuyPlayBack = (playback) => {
         if (user == null)
-            alert("כדי לרכוש פלייבקים באתר יש להתחבר. אנא התחבר כדי שתוכל להנות אצלנו.") 
+            alert("כדי לרכוש פלייבקים באתר יש להתחבר. אנא התחבר כדי שתוכל להנות אצלנו.")
         else {
             alert("הינך מועבר לרכישת פלייבקים באתר")
             dispatch(savePlaybackToOrder(playback)) //שמירת הפלייבק ברידקס
@@ -63,8 +70,8 @@ export const Playback = (props) => {
             {/* כותרת והסבר */}
             <h1 className="h1Play-Play">הפלייבקים שלנו</h1>
             <p id="text">
-                כאן תוכל למצוא מבחר פלייבקים מהמצוינים בשוק. הפלייבקים שלנו ידועים באיכותם הגבוהה ובביצוע מוזיקלי מהמקצועיים ביותר שיש. 
-                בואו נתחיל רכישת פלייבק. לחץ כעת על כפתור קנה עכשיו ותועבר לטופס תשלום. באפשרותך לבצע רכישת פלייבקים בלחיצת כפתור. 
+                כאן תוכל למצוא מבחר פלייבקים מהמצוינים בשוק. הפלייבקים שלנו ידועים באיכותם הגבוהה ובביצוע מוזיקלי מהמקצועיים ביותר שיש.
+                בואו נתחיל רכישת פלייבק. לחץ כעת על כפתור קנה עכשיו ותועבר לטופס תשלום. באפשרותך לבצע רכישת פלייבקים בלחיצת כפתור.
                 המערכת תזהה את הרכישה שלכם ותעביר אתכם לטופס תשלום באמצעות כרטיס האשראי שלכם. לאחר קליטת התשלום במערכת תקבלו את הפלייבק/ים שרכשתם לכתובת האימייל שלכם כפי שמופיע במערכת.
             </p>
 
@@ -185,7 +192,7 @@ export default Playback;
 
 //     const BuyPlayBack = (playback) => {
 //         if (user == null)
-//             alert("כדי לרכוש פלייבקים באתר יש להתחבר. אנא התחבר כדי שתוכל להנות אצלנו.") 
+//             alert("כדי לרכוש פלייבקים באתר יש להתחבר. אנא התחבר כדי שתוכל להנות אצלנו.")
 //         else {
 //             alert("הינך מועבר לרכישת פלייבקים באתר")
 //             dispatch(savePlaybackToOrder(playback)) //שמירת הפלייבק ברידקס

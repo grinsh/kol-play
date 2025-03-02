@@ -54,7 +54,7 @@ function App() {
        <Routes>
         <Route path="/" element={<div className="animation"><Animation /> </div>} />
         <Route path="invitation" element={<Invitation />} />
-        <Route path="playback" element={<Playback />} />
+        <Route path="playback/:song/:singer" element={<Playback />} />
         <Route path="productsToOrders" element={<ProductsToOrders />} />
         <Route path="singers" element={<Singers />} />
         <Route path="songs" element={<Songs />} />
