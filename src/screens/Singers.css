@@ -1,0 +1,70 @@
+/*דיב עוטף הכל- עובד*/
+.s1 {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    white-space: nowrap;
+}
+
+/*עובד*/
+.singers {
+    border: 5px dotted green;
+
+    width: 10%;
+    line-height: 0px;
+
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+
+
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: 50px;
+    margin-top: -1%;
+
+    text-align: center;
+    padding: 30px;
+    white-space: nowrap;
+    justify-content: space-around;
+
+}
+
+/*כותרת- עובד*/
+.h1Singers {
+    margin-top: -9%;
+}
+
+.s2 {
+    margin-top: 4vh;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Singer {
+    border: 5px dotted green;
+    width: 20%;
+    height: 300px;
+    padding:24px;
+
+    padding: 2;
+    margin: 0;
+    line-height: -15%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+
+    margin-bottom: 5%;
+}
+
+.Singer * {
+    margin: 0;
+    padding: 0;
+}
+.Button1{
+    margin-top: -4%;
+}

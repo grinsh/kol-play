@@ -1,0 +1,95 @@
+.p1 {
+    text-align: center;
+    padding: 10%;
+    display: flex;
+    white-space: nowrap;
+    top: -20px;
+
+}
+
+.playback {
+    text-align: center;
+    /*טוב*/
+    border: 5px dotted green;
+    /*טוב*/
+
+    width: 15%;
+    /*טוב*/
+    text-align: center;
+    /*טוב*/
+    /*flex-direction: column;*/
+    /*טוב*/
+    align-items: center;
+    /*טוב*/
+
+    margin: 0 auto;
+    /*טוב*/
+    /*flex-direction: column;*/
+    /*טוב*/
+    /* justify-content: center; */
+    /* align-items: center;  */
+
+
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px;
+    margin-top: 0%;
+    padding: 0.5%;
+
+
+    /* vertical-align: middle; */
+    vertical-align: top;
+    /*לא משפיע כלל*/
+    /*float: left; */
+    /*טוב אבל באופן חלקי*/
+    /*display: inline-block;*/
+    /*לא משפיע כלל*/
+    vertical-align: middle;
+    /*לא משפיע כלל*/
+
+    /* display: flex; */
+    /* align-items: center; */
+    /* display: inline-block; */
+    /* flex-wrap:wrap; */
+    /* justify-content: space-around; */
+    /* top: 200%; */
+    margin-bottom: 0px;
+    /*לא משפיע כלל*/
+}
+
+/* .h1Play{
+    text-align: center;
+    white-space: nowrap;
+    margin-right: 42%;
+    margin-top: -11%;
+    margin-bottom: -50%;
+} */
+
+/* .usersDiv{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+} */
+#text {
+    text-align: center;
+    border: 5px dotted green;
+    margin: 0 auto;
+    width: 98%;
+    padding: 0.5%;
+    margin-top: 60px;
+}
+
+.Button {
+    margin-top: -1%;
+    padding: 10px;
+}
+
+.Div-P {
+    margin-top: 10%;
+}
+
+.h1Play-Play {
+    margin-top: -7%;
+
+}

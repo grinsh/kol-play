@@ -1,0 +1,34 @@
+#takanon{
+    text-align: center;
+    border: 5px dotted green;
+    margin: 0 auto;
+    width: 40%;
+    padding: 0.5%;
+    margin-top: 50px;
+}
+h2{
+    text-align: center;
+    margin-top: 3.5%;
+}
+button{
+    align-items: center;
+    display: inline-block;
+}
+
+#divTakanonUpdate form{
+    text-align: center;
+    border: 5px dotted green;
+    margin: 0 auto;
+    width: 80vw;
+    padding: 0.5%;
+    margin-top: 50px;
+}
+
+#divTakanonUpdate form *{
+    width: 100%;
+}
+
+#divTakanonUpdate form textarea{
+    min-height:100px;
+    width:80vw;
+}

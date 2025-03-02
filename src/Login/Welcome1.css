@@ -1,0 +1,33 @@
+/*כותרת ברוכים הבאים*/
+.h1welcome1 {
+    margin-bottom: -225%;
+    margin-top: -8%;
+    margin-left: 10%;
+}
+
+/*טופס הרשמה*/
+.h1 {
+    margin: center;
+    text-align: center;
+    text-align: center;
+    /* margin-left: 200px; */
+    margin-right: 600px;
+    margin-top: -30%;
+    margin-bottom: -35%;
+    /* margin: 0%;*/
+}
+/*כבר רשום*/
+.h3welcome1 {
+    text-align: center;
+    margin: center;
+    text-align: center;
+    text-align: center;
+    margin-left: 200%;
+    margin-right: 600px;
+    margin-top: -7%;
+    /* margin-bottom: -30%; */
+    /* margin: 0%;*/
+}
+.Adi-Amir{
+    margin-top: -60%;
+}

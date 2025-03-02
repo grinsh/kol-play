@@ -1,0 +1,128 @@
+.add-Singer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    width: 10%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 0%;
+    margin-bottom: -50%;
+    margin-top: -2%;
+}
+.all{
+    margin-top: -50px;
+}
+.error-message{
+    background-color: red;
+}
+h1{
+    text-align: center;
+    margin-right: -165px;
+    margin-top: 16%;
+    margin-bottom: -65%;
+}
+.button{
+padding: 5px;
+width: 185px;
+}
+
+/*טופס הוספת זמר*/
+.add-Playback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    width: 10%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 0%;
+    margin-top: 1%;
+}
+.all{
+    margin-top: 15%;
+    margin-bottom: -50%;
+    margin-right: -15%;
+}
+.error-message{
+    background-color: red;
+}
+h1{
+    text-align: center;
+    margin-right: -165px;
+    margin-top: 16%;
+    margin-bottom: -65%;
+}
+.button{
+padding: 5px;
+width: 185px;
+margin-right: 4%;
+margin-top: -10%;
+}
+
+/*--------------------------------*/
+.p1 {
+    text-align: center;
+    padding: 10%;
+    display: flex;
+    white-space: nowrap;
+    top: -20px;
+
+}
+.playback {
+    text-align: center; /*טוב*/
+    border: 5px dotted green; /*טוב*/
+
+    width: 15%; /*טוב*/
+    text-align: center; /*טוב*/
+    /*flex-direction: column;*/ /*טוב*/
+    align-items: center; /*טוב*/
+
+    margin: 0 auto; /*טוב*/
+
+    display: inline-block;
+    flex-wrap: wrap;
+     justify-content: space-between; 
+    margin: 50px;
+    margin-top: 5%;
+    padding: 0.5%;
+
+
+    vertical-align: top; /*לא משפיע כלל*/
+    /*float: left; *//*טוב אבל באופן חלקי*/
+    vertical-align: middle; /*לא משפיע כלל*/
+}
+
+.Add{
+    position: relative;
+    margin: 0;
+    margin-right: -15%;
+    margin-top: -30%;
+}
+
+ .Add-S{
+    margin-top: -5%;
+ }
+ .text{
+    margin-top: 70%;
+ }

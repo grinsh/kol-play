@@ -1,0 +1,38 @@
+div{
+    text-align: center;
+}
+.button{
+    align-items: center;
+    display: inline-block;
+    width: 50px;
+}
+input{
+    align-items: center;
+    border: 7px dotted green;
+
+    margin: 5px;
+    padding: 5px;
+}
+.textbox{/*טופס הרשמה בכללי*/
+    font-size: 12px;
+
+    width: 15%;
+    text-align: center;
+  
+    /*טופס  הרשמה*/
+    margin: 500px;
+    /*כבר רשום? עבור להתחברות*/
+    margin-right: 600px; 
+    margin-bottom: 130px;
+    /*----------*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*הכל*/
+    margin-top: 44%;
+    /*?????????*/
+    margin-left: 55px;
+}
+.enter{/*טופס הרשמה בעצמו*/
+    margin-top: 250%;
+}

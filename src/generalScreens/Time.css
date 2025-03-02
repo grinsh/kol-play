@@ -1,0 +1,11 @@
+body{
+  background: left;
+}
+
+.left-align {
+  text-align: left;
+  border: 5px dotted white;
+  padding: 5px;
+  margin-right: 7%;
+  margin-top: -85px;
+}

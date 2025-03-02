@@ -1,0 +1,59 @@
+body {
+    direction: rtl;
+}
+
+.h1User {
+    /* text-align: center;
+    margin-top: -200%; */
+    /* margin-right: 35%;
+    margin-top: -11%;
+    margin-bottom: -5%; */
+    margin-right: 10%;
+    margin-top: -7%;
+    margin-bottom: 3%;
+}
+
+.user {
+    text-align: center;
+    border: 5px dotted green;
+}
+
+.usersDiv {
+    display: flex;
+    flex-wrap:wrap;
+    display: inline-flex;
+    padding-top: 0%;
+    justify-content: space-around;
+    top: 200%;
+    margin-top: 300%;
+    /* margin-right: 15%; */
+
+    float: right;
+
+    /*justify-content: center;*/     /* מרכז את האלמנטים בציר ה-X */
+    align-items: center;         /* מרכז את האלמנטים בציר ה-Y (אם הקונטיינר גבוה יותר) */
+    /*height: 100vh;*/               /* כדי להראות את האפקט (אורך הקונטיינר) */
+
+    margin: 5px;               /* רווחים בין האלמנטים */
+    padding: 5px;
+    margin-right: 4%;
+
+}
+
+#text2 {
+    text-align: center;
+    border: 5px dotted green;
+    margin: 0 auto;
+    width: 50%;
+    padding: 0.5%;
+    margin-top: 35px;
+}
+
+.button {
+    margin-top: -20%;
+    white-space: nowrap;
+    margin-left: 13%;
+}
+.Div-All{
+    margin-top: 10%;
+}

@@ -1,0 +1,183 @@
+.App {
+  text-align: center;
+}
+
+
+
+/* מכאן אני עשיתי */
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Nav {
+  display: inline;
+  flex-direction: column-reverse;
+} */
+
+.img-Logo {
+  padding: 0px;
+  width: 180px;
+  height: 150px;
+  text-align: left;
+  margin-left: 10%;
+  padding-left: 70%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  /*סרגל ניווט קבוע שגולל יחד עם תוכן העמוד*/
+  position: sticky;
+  margin-bottom: 35px;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  background-color: green;  
+  color: white;
+  /* color: white; */
+
+    height: 100px; 
+    padding-top: 50px; 
+    padding-bottom: 10px;
+   
+
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 18);
+}
+
+/*
+position: fixed;
+        top: 0%;
+        width: 100%;
+        background-color: #ffffff;
+        color: black;*/
+
+.nav {
+  margin-top: -85px;
+  padding-left: -85%;
+}
+
+.animation {
+  margin-top: -85px;
+  margin-left: 70px;
+  /* padding-left: -85%;
+  /* width: 100px; 
+  height: 100px;
+ bottom: 25px; */
+}
+
+/* 
+/* כפתור צבוע */
+/* .buttonContainer button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+} */
+
+/* .buttonContainer button.active {
+  background-color: blue;
+  color: white;
+}  */
+
+/* .buttonContainer {
+  display: flex;
+  gap: 10px; /* spacing between buttons */
+/* margin: 10px 0; margin for button container */
+/* } */
+
+/* .buttonContainer button {
+  padding: 10px 20px;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+} */
+
+/* .buttonContainer button.active {
+  background-color: blue;
+  color: white;
+} */
+
+
+/* ניסיון אחרון לכפתורים*/
+/* App.css */
+/* .buttonContainer {
+  display: flex;
+  gap: 10px; /* מרחק בין הכפתורים */
+/* margin: 10px 0; שוליים למכלול הכפתורים */
+/* }  */
+
+/* .buttonContainer button {
+  padding: 10px 20px;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+} */
+
+/* .buttonContainer button.active {
+  background-color: blue;
+  color: white;
+} */
+
+/* App.css */
+/* .buttonContainer button {
+  padding: 10px 20px;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+} */
+
+/* .buttonContainer button.active {
+  background-color: blue;
+  color: white;
+} */
+
+
+/* App.css */
+/* .buttonContainer button {
+  padding: 10px 20px;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+} */
+
+/* .buttonContainer button.active {
+  background-color: blue;
+  color: white;
+} */
+
+
+/* App.css */
+/* .buttonContainer button {
+  padding: 10px 20px;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+} */
+
+/* עיצוב למחלקה של כפתור פעיל */
+/* .buttonContainer button.active {
+  background-color: green;
+  color: white;
+} */
+
+
+/* App.css */
+.buttonContainer button {
+  padding: 10px 20px;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonContainer button.active {
+  background-color: green;
+  color: white;
+}

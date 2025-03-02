@@ -1,0 +1,42 @@
+.add-Song{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    width: 10%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 0%;
+    margin-bottom: -50%;
+    margin-top: -7%;
+}
+.all{
+    margin-top: -50px;
+}
+.error-message{
+    background-color: red;
+}
+h1{
+    text-align: center;
+    margin-right: -165px;
+    margin-top: 16%;
+    margin-bottom: -65%;
+}
+.button{
+padding: 5px;
+width: 185px;
+margin-top: 5%;
+margin-left: -5%;
+}
+.Add1{
+    margin-top: 120%;
+}

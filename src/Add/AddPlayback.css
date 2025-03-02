@@ -1,0 +1,87 @@
+.add-Playback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    width: 10%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 0%;
+    margin-top: 1%;
+}
+.all{
+    margin-top: 15%;
+    margin-bottom: -50%;
+}
+.error-message{
+    background-color: red;
+}
+h1{
+    text-align: center;
+    margin-right: -165px;
+    margin-top: 16%;
+    margin-bottom: -65%;
+}
+.button{
+padding: 5px;
+width: 185px;
+margin-top: 5%;
+}
+
+/*--------------------------------*/
+.p1 {
+    text-align: center;
+    padding: 10%;
+    display: flex;
+    white-space: nowrap;
+    top: -20px;
+
+}
+.playback {
+    text-align: center; /*טוב*/
+    border: 5px dotted green; /*טוב*/
+
+    width: 15%; /*טוב*/
+    text-align: center; /*טוב*/
+    align-items: center; /*טוב*/
+
+    margin: 0 auto; 
+
+    display: inline-block;
+    flex-wrap: wrap;
+     justify-content: space-between; 
+    margin: 50px;
+    margin-top: 5%;
+    padding: 0.5%;
+
+
+    vertical-align: top; /*לא משפיע כלל*/
+    vertical-align: middle; /*לא משפיע כלל*/
+}
+.h1Play{
+    text-align: center;
+    white-space: nowrap;
+    margin-right: 42%;
+    margin-top: -11%;
+    margin-bottom: -50%;
+}
+
+.Add-P{
+    position: relative;
+    margin: 0;
+    margin-right: -15%;
+    margin-top: -30%;
+}
+ .Addd{
+    margin-top:10%
+} 
