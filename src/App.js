@@ -22,6 +22,8 @@ import AddSong from './Add/AddSong';
 import Filtering from './generalScreens/Filtering';
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import Diary from './generalScreens/Diary';
+import AddAdvertising from './Add/AddAdvertising';
 
 
 // import Download from './generalScreens/Download';
@@ -62,13 +64,15 @@ function App() {
         <Route path="takanon" element={<Takanon />} />
         <Route path="welcomeRegister" element={<Welcome1 />} />
         <Route path="welcomeLogin" element={<Welcome />} />
-        <Route path="playback" element={<Takanon />} />
+        <Route path="playback" element={<Playback />} />
         <Route path="AddPlayback" element={<AddPlayback />} />
         <Route path="myInvitation" element={<MyInvitation />} />
         <Route path="payment" element={<Payment />} />
         <Route path="addSinger" element={<AddSinger />} />
         <Route path="addSong" element={<AddSong />} />
         <Route path="invitationUser" element={<InvitationUser />} />
+        <Route path="advertising" element={<AddAdvertising />} /> 
+        <Route path="diary" element={<Diary />} />
       </Routes> 
 
 

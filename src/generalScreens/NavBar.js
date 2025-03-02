@@ -15,6 +15,7 @@ import ArtTrackIcon from '@mui/icons-material/ArtTrack';
 // import AssignmentIcon from '@mui/icons-material/Assignment';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArticleIcon from '@mui/icons-material/Article';
+import EditCalendarOutlinedIcon from '@mui/icons-material/EditCalendar';
 
 
 // ----------------
@@ -47,7 +48,7 @@ export default function NavBar() {
       </li> */}
 
       <li>
-        <Link to="playBack"><Button style={{ borderColor: "white", color: "white" }} variant="outlined"><AudioFileIcon />פלייבק</Button></Link>
+        <Link to="playBack/all/all"><Button style={{ borderColor: "white", color: "white" }} variant="outlined"><AudioFileIcon />פלייבק</Button></Link>
       </li>
 
       <li>
@@ -80,6 +81,9 @@ export default function NavBar() {
           <li className="line">
             <Link to="invitation"><Button style={{ borderColor: "white", color: "white" }} variant="outlined"><AssignmentIcon />ניהול הזמנות משתמשים</Button></Link>
           </li>
+          <li className="line">
+            <Link to="advertising"><Button style={{ borderColor: "white", color: "white" }} variant="outlined">העלאת פרסומת  </Button></Link>
+          </li>
 
         </>
       }
@@ -90,6 +94,9 @@ export default function NavBar() {
       {user && user.status && user.status == 1 && (
         <>
           <div className="user-M">
+          <Link to="/diary"> <Button style={{ borderColor: "white", color: "white",margin:"10px"}} variant="outlined">
+              <EditCalendarOutlinedIcon />
+            </Button></Link>
             <Button style={{ borderColor: "white", color: "white" }} variant="outlined">
               משתמש מנהל {user.name}<ManageAccountsIcon />
             </Button>
