@@ -181,3 +181,31 @@ position: fixed;
   background-color: green;
   color: white;
 }
+
+ 
+audio{
+  width: 100%;
+  /* height: auto; */
+  /* display: block; */
+}
+
+
+
+
+/* Hide specific controls using WebKit-specific pseudo-elements */
+audio::-webkit-media-controls-enclosure {
+  overflow: hidden;
+}
+
+audio::-webkit-media-controls-panel {
+  width: calc(100% - 40px); /* Adjust to leave space for the play/pause button */
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-volume-control-container,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-fullscreen-button {
+  display: none;
+}

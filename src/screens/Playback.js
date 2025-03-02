@@ -121,6 +121,7 @@ export const Playback = (props) => {
                         <p> מחיר: {p.price} ש"ח</p>
                         <p> אורך השיר: {p.lengthPlayBack}</p>
                         <audio src={'http://localhost:8000/public/playbacks/' + p.src} controls></audio>
+                        
                         {(user == null || user.status == 2) &&
                             <Button
                                 style={{ borderColor: "green", color: "green" }}
