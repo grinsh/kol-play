@@ -9,6 +9,7 @@ import * as React from 'react';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import YoutubeSearchedForIcon from '@mui/icons-material/YoutubeSearchedFor'; // אייקון חיפוש
+import SendIcon from '@mui/icons-material/Send';
 
 export const Singers = () => {
 
@@ -95,6 +96,15 @@ export const Singers = () => {
                                 src={'http://localhost:8000/public/singers/' + si.src}
                                 alt={si.nameSinger}
                             />
+                              <Button
+              style={{ borderColor: "green", color: "green", width: "92%", whiteSpace: 'nowrap' }}
+              color="success"
+              variant="outlined"
+              endIcon={<SendIcon style={{ transform: 'scaleX(-1)' }} sx={{ marginRight: 1 }} />}
+              onClick={() => { navigate("/Playback/all/"+si.nameSinger) }}
+            >
+              לחץ למעבר לדף הפלייבקים
+            </Button>
                             {user && user.status === 1 && (
                                 <div className="Button-Delete">
                                     <IconButton style={{ color: "green", marginTop: "-91vh", marginRight: "42vh" }} aria-label="delete" size="large">

@@ -32,10 +32,11 @@ export const Playback = (props) => {
             //3
             setPlaybackArr(res.data);
             setFilteredPlaybacks(res.data); // מניחים שהסינון יתחיל על כל הפלייבקים
-            if (singer!=-1)
-                setFilteredPlaybacks(res.data.filter(pb => pb.nameSinger == singer || singer=="all"));
-            if (song!=-1)
-                setFilteredPlaybacks(res.data.filter(pb => pb.nameSong == song||song=="all"));
+            
+            if (singer!="all")
+                setFilteredPlaybacks(res.data.filter(pb => pb.nameSinger == singer ));
+            if (song!="all")
+                setFilteredPlaybacks(res.data.filter(pb => pb.nameSong == song));
         }).catch(err => alert("התרחשה שגיאה בעת ההתחברות לשרת"))
     }, [])   //הפונקציה תופעל כשהקומפוננטה עולה
 
